@@ -1,7 +1,7 @@
 {
   "name": "nativescript-wechat-share-plugin",
   "version": "0.0.1",
-  "description": "wechat share plugin on nativesction.",
+  "description": "wechat share plugin on nativescrip.",
   "main": "wechat-share",
   "typings": "wechat-share.d.ts",
   "nativescript": {
