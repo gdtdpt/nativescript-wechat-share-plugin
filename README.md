@@ -57,20 +57,20 @@ wechatSharePlugin.share(sharingOptions);
 
 ##### sharing url
 ```typescript
-	import {WechatSharePlugin, WechatSharingScene, WechatSharingType} from 'nativescript-wechat-share-plugin';
+import {WechatSharePlugin, WechatSharingScene, WechatSharingType} from 'nativescript-wechat-share-plugin';
 
-	let wechatSharePlugin = new WechatSharePlugin(/*YOUR_WECHAT_APP_ID*/);
-    
-    let sharingOptions = {
-      scene: WechatSharingScene.TIMELINE,
-      messages: {
-        media: {
-          type: WechatSharingType.TYPE_SHARING_WEBPAGE,
-          webpageUrl: "https://open.weixin.qq.com/"
-        }
-      }
-    };
-    wechatSharePlugin.share(sharingOptions);
+let wechatSharePlugin = new WechatSharePlugin(/*YOUR_WECHAT_APP_ID*/);
+  
+let sharingOptions = {
+  scene: WechatSharingScene.TIMELINE,
+  messages: {
+    media: {
+      type: WechatSharingType.TYPE_SHARING_WEBPAGE,
+      webpageUrl: "https://open.weixin.qq.com/"
+    }
+  }
+};
+wechatSharePlugin.share(sharingOptions);
 ```
 
 ##### sharing local image
