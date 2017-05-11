@@ -1,0 +1,18 @@
+//default elements
+android {
+    productFlavors {
+        "nativescriptwechatshareplugin" {
+            dimension "nativescriptwechatshareplugin"
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+dependencies {
+     compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

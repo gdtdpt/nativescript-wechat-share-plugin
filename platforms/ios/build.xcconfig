@@ -1,0 +1,6 @@
+
+LIBRARY_SEARCH_PATHS =  $(inherited) "$(SRCROOT)/../../node_modules/nativescript-wechat-share-plugin/platforms/ios"
+
+OTHER_LDFLAGS = $(inherited) -Objc -all_load -L"$(SRCROOT)/../../node_modules/nativescript-wechat-share-plugin/platforms/ios" -lWeChatSDK -lz -lsqlite3.0 -lc++ -framework SystemConfiguration -framework Security -framework CoreTelephony -framework CFNetwork
+
+
