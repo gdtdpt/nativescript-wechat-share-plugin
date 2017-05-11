@@ -1,0 +1,55 @@
+{
+  "name": "nativescript-wechat-share-plugin",
+  "version": "0.0.1",
+  "description": "wechat share plugin on nativesction.",
+  "main": "wechat-share",
+  "typings": "wechat-share.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "2.5.0",
+      "ios": "2.5.0"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.ios": "npm run preparedemo && cd demo && tns run ios --emulator",
+    "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "test.ios": "cd demo && tns test ios --emulator",
+    "test.ios.device": "cd demo && tns test ios",
+    "test.android": "cd demo && tns test android",
+    "prepareios": "npm run build && cd demo && tns plugin remove nativescript-wechat-share-plugin && tns plugin add .. && tns install && tns prepare ios",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-wechat-share-plugin && tns plugin add .. && tns install && tns prepare android && tns prepare ios",
+    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
+    "postclone": "npm i && node scripts/postclone.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdtdpt/nativescript-wechat-share-plugin.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "Wechat",
+    "share"
+  ],
+  "author": {
+    "name": "Richard",
+    "email": "hyxiang87@foxmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/gdtdpt/nativescript-wechat-share-plugin/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/gdtdpt/nativescript-wechat-share-plugin",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "tns-core-modules": "~2.5.2",
+    "tns-platform-declarations": "~2.5.2",
+    "typescript": "~2.1.0",
+    "prompt": "~1.0.0",
+    "rimraf": "~2.5.0"
+  }
+}

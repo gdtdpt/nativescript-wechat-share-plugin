@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page">
+  <StackLayout class="p-20">
+    <Label text="{{ message }}" class="t-20 text-center c-black" textWrap="true"/>
+    <Button text="Share Text Message to Wechat" tap="{{ shareTextToWechat }}"></Button>
+    <Button text="Share Url Message to Wechat" tap="{{ shareUrlToWechat }}"></Button>
+    <Button text="Share Local Image Message to Wechat" tap="{{ shareLocalImageToWechat }}"></Button>
+    <Button text="Share Local Image Message to Wechat" tap="{{ shareOnlineImageToWechat }}"></Button>
+    <Button text="Share Music Message to Wechat" tap="{{ shareMusicToWechat }}"></Button>
+    <Button text="Share Video Message to Wechat" tap="{{ shareVideoToWechat }}"></Button>
+    <Button text="Open Wechat" tap="{{ openWechat }}"></Button>
+  </StackLayout>
+</Page>
