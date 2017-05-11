@@ -130,7 +130,7 @@ let sharingOptions = {
     description: "shareMusicToWechat description",
     media: {
       type: WechatSharingType.TYPE_SHARING_MUSIC,
-      image: "http://staff2.ustc.edu.cn/~wdw/softdown/index.asp/0042515_05.ANDY.mp3"
+      musicUrl: "http://staff2.ustc.edu.cn/~wdw/softdown/index.asp/0042515_05.ANDY.mp3"
     }
   }
 }
@@ -150,7 +150,7 @@ let sharingOptions = {
     description: "shareVideoToWechat description",
     media: {
       type: WechatSharingType.TYPE_SHARING_VIDEO,
-      image: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+      videoUrl: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
     }
   }
 }
