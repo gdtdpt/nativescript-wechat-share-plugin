@@ -64,6 +64,8 @@ let wechatSharePlugin = new WechatSharePlugin(/*YOUR_WECHAT_APP_ID*/);
 let sharingOptions = {
   scene: WechatSharingScene.TIMELINE,
   messages: {
+    title: "url title",
+    description: "url description",
     media: {
       type: WechatSharingType.TYPE_SHARING_WEBPAGE,
       webpageUrl: "https://open.weixin.qq.com/"
